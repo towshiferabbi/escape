@@ -1,0 +1,622 @@
+@font-face{
+	font-family:Cubano-Regular;
+	src:url(../fonts/Cubano-Regular.otf);
+}
+@font-face{
+	font-family:Brandon_reg;
+	src:url(../fonts/Brandon_reg.otf);
+}
+@font-face{
+	font-family:Brandon-light;
+	src:url(../fonts/Brandon-light.woff);
+}
+@font-face{
+	font-family:Brandon_med;
+	src:url(../fonts/Brandon_med.otf);
+}
+@font-face{
+	font-family:Brandon_bld;
+	src:url(../fonts/Brandon_bld.otf);
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family:Brandon_reg;
+/*banner starts*/
+}
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainwrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+header{
+    padding-top: 3%;
+    overflow: hidden;
+    margin-bottom: 14%;
+}
+.logo {
+	float: left;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+.logo::after{
+	content: 'Wanna Escape??Hop on!';
+    background-color: #221D3B;
+    color: white;
+    width: 186px;
+    height: 22px;
+    height: -5px;
+    position: absolute;
+    top: 3%;
+    left: 21%;
+    transform: scale(0);
+    transition: transform ease-out 150ms,
+				 bottom ease-out 150ms;
+    transition: .6s;
+    font-size: 19px;
+}
+.logo:hover::after{
+	transform: scale(1);
+}
+#logoid{
+    color: white;
+    font-size: 26px;
+    position: relative;
+}
+.far.fa-paper-plane {
+    transform: rotate(19deg);
+}
+.far.fa-paper-plane:hover{
+	transform: rotateZ(360deg);
+	transition: .7s;
+}
+.title {
+    margin-left: .5%;
+    position: absolute;
+    top: 1.5%;
+    left: 17%;
+    cursor: pointer;
+}
+#logop{
+    font-family: Cubano-Regular;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: white;
+}
+.menu {
+    float: right;
+    width: 46.7%;
+}
+.menu ul{
+    list-style: none;
+    margin-top: 8px;
+}
+.menu ul li{
+    float: left;
+}
+.menu ul li a{
+	text-decoration: none;
+    padding: 0px 15px;
+    font-family: Brandon_med;
+    font-size: 17px;
+    color: white;
+}
+.menu ul li:last-child a{
+	padding-right: 0;
+}
+.menu ul li:hover a{
+	transition: .6s;
+	color: #736467;
+}
+#pid1{
+    text-align: center;
+    font-family: Brandon-light;
+    font-size: 32px;
+    margin-bottom: 0;
+    color: white;
+}
+#hid1{
+    text-align: center;
+    font-family: Brandon_bld;
+    font-size: 64px;
+    margin-top: 3%;
+    position: relative;
+    margin-bottom: 5.5%;
+    color: white;
+}
+.button {
+	font-family: Brandon_bld;
+    font-size: 21pt;
+    background: transparent;
+    color: white;
+    padding: 15px 57px;
+    margin-bottom: 8%;
+    border-radius: 2%;
+    border-color: white;
+    cursor: pointer;
+    margin-left: 38%;
+    color: white;
+}
+.button:hover{
+	transition: .5s;
+	background-color: #3B2E3F;
+	color: white;
+	box-shadow: 0 1px 1px;
+	border-style: dashed;
+}
+/*banner ends*/
+/*Description starts*/
+.wrapper1 {
+	width: 94%;
+    margin: 0 auto;
+}
+.wrap1 {
+    margin: 100px 0;
+    float: left;
+    width: 65%;
+}
+.nav1 {
+    display: inline-block;
+    font-family: Brandon-light;
+    font-size: 60px;
+}
+
+.hh1 {
+    display: inline;
+    font-family: Brandon_bld;
+    font-size: 60px;
+    color: #222222;
+}
+.pp1 {
+    font-family: Brandon_reg;
+    font-size: 18px;
+    color: #929292;
+    line-height: 23px;
+}
+.wrap2 {
+    float: right;
+    width: 27%;
+    padding: 112px 0px;
+}
+.nav2 {
+	display: inline-block;
+    font-family: Brandon-light;
+    font-size: 60px;
+    margin-bottom: 6%;
+}
+.wrap3 {
+    float: left;
+    width: 36%;
+    padding: 100px 0px;
+    padding-bottom: 225px;
+}
+.wrap4 {
+    margin: 90px 0;
+    float: right;
+    width: 62%;
+    line-height: 23px;
+    padding-bottom: 100px;
+}
+/*Description ends*/
+/*services starts*/
+.single{
+    width: 66%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 10%;
+}
+.key:nth-child(even){
+    margin-left: 6%;
+}
+.key {
+    float: left;
+    width: 47%;
+    margin-bottom: 50px;
+}
+.log{
+    float: left;
+    position: relative;
+    list-style: none;
+    width: 72px;
+    height: 71px;
+    background-color: black;
+    border-radius: 40px;
+}
+.key:nth-child(1):hover .log{
+    transition: .8s;
+    transform: rotateY(360deg);
+}
+.key:nth-child(2):hover .log{
+    transition: .8s;
+    transform: rotateX(360deg);
+}
+.key:nth-child(3):hover .log{
+    transition: .6s;
+    transform: rotateY(180deg);
+}
+.key:nth-child(4):hover .log{
+    transition: .6s;
+    transform: rotateX(180deg);
+}
+.key:nth-child(5):hover .log a{
+    transition: .6s;
+    transform: rotateZ(360deg);
+}
+.key:nth-child(6):hover .log a{
+    transition: .6s;
+    transform: rotateX(360deg);
+}
+.log a{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 33px;
+}
+#a3{
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    font-size: 33px;
+}
+#a5{
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    font-size: 33px;
+}
+.log a:link, .log a:visited, .log a:hover, .log a:active{
+    color: white;
+}
+.info {
+    float: right;
+    width: 77%;
+}
+.tit {
+    font-family: Brandon_med;
+    font-size: 22px;
+}
+/*service ends*/
+/*client starts*/
+.clientwrap {
+        width: 60%;
+    margin: 0 auto;
+}
+.headwrap {
+    text-align: center;
+}
+#pid2{
+    font-family: Brandon_reg;
+    font-size: 22px;
+    color: #929292;
+    line-height: 23px;
+    margin-bottom: 8%;
+}
+.postwrap{
+    overflow: hidden;
+}
+.back a img:hover{
+    transform: translateX(-10px);
+        box-shadow: 0 10px 10px rgba(0,0,0,.5);
+        transition: .6s;
+}
+.back2 a img:hover{
+    transform: translateX(10px);
+        box-shadow: 0 10px 10px rgba(0,0,0,.5);
+        transition: .6s;
+}
+.back{
+    float: left;
+    width: 23%;
+    height: 230px;
+    position: relative;
+}
+.back2{
+        float: left;
+    width: 23%;
+    height: 230px;
+    position: relative;
+}
+.back img , .back2 img{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+.cmmnt {
+float: right;
+    width: 49%;
+    padding-right: 84px;
+    margin-top: 4%;
+}
+.back2{
+    float: right;
+    width: 23%;
+    height: 230px;
+    position: relative;
+}
+.cmmnt2 {
+    float: left;
+    width: 47%;
+    margin-top: 6%;
+    padding-left: 18%;
+}
+.ppp1{ 
+    font-family: Brandon_reg;
+    font-size: 26px;
+    color: #929292;
+    line-height: 32px;
+    margin: 0;
+}
+span{
+    font-family: Brandon_reg;
+    font-size: 20px;
+    color: #7690c5;
+    padding-top: 4%;
+}
+.marker {
+    margin: 17% auto;
+    margin-bottom: 28%;
+    width: 90%;
+}
+.logowrap {
+    float: left;
+    padding-left: 5%;
+}
+.logowrap:hover{
+    transform: translateY(-10px);
+    transition: .6s;
+}
+/*client ends*/
+/*info starts*/
+.teamwrapper {
+    background-color: black;
+    color: white;
+    height: 800px;
+}
+.teamwrap {
+    padding-top: 6%;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.hhhh1{
+    display: inline;
+    font-family: Brandon_bld;
+    font-size: 60px;
+    color: white;
+}
+.pppp1{
+font-family: Brandon_reg;
+    font-size: 26px;
+    color: #929292;
+    line-height: 34px;
+    margin: 0;
+}
+.infowrap {
+    width: 58%;
+    margin: 0 auto;
+    padding-top: 7%;
+}
+.individual {
+    width: 30%;
+    overflow: hidden;
+    float: left;
+    padding-left: 3%;
+}
+.pic, .pic1, .pic2 {
+    background-color: white;
+    position: relative;
+    width: 90%;
+    height: 212px;
+    border-radius: 49%;
+    border-color: white;
+    border-style: solid;
+    margin-left: 3.5%;
+}
+.pic::after{
+    content: 'Affiliate Marketing';
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    left: 25%;
+    z-index: 1;
+    top: -18%;
+    transition: .6s;
+    transition: transform ease-out 150ms;
+    transition: .6s;
+    transform: scale(0);
+}
+.pic1::after{
+    content: 'Web Development';
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    left: 18%;
+    z-index: 1;
+    top: -18%;
+    transition: .6s;
+    transition: transform ease-out 150ms;
+    transition: .6s;
+    transform: scale(0);
+}
+.pic2::after{
+    content: 'UI/UX Designer';
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    left: 27%;
+    z-index: 1;
+    top: -18%;
+    transition: .6s;
+    transition: transform ease-out 150ms, top ease-out 150ms;
+    transition: .6s;
+    transform: scale(0);
+}
+.pic:hover::after , .pic1:hover::after, .pic2:hover::after{
+    transform: scale(1);
+    top: 32%;
+}
+.pic:hover .iimg, .pic1:hover .iimg, .pic2:hover .iimg{
+    opacity: .2;
+}
+.iimg{
+    width: 98%;
+    height: 97%;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    left: 3px;
+    bottom: 0;
+    border-radius: 50%;
+}
+.ppppp1 {
+     text-align: center;
+    font-family: Brandon_bld;
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 21px;
+}
+.ppppp2 {
+    text-align: center;
+    font-family: Brandon_reg;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ul1 li a:link, .ul1 li a:visited, .ul1 li a:hover, .ul1 li a:active{
+    color: white;
+}
+.ul1{
+    list-style: none;
+        margin-top: 2%;
+}
+.ul1 li{
+    float: left;
+    padding: 2px 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.ul1 li a{
+    font-size: 23px;
+}
+.ul1 li:hover {
+    transform: translateY(-10px);
+    transition: .6s;
+}
+.bottom{
+    width: 80%;
+    padding-top: 48%;
+    margin: 0 auto;
+}
+.pppppp1 {
+    text-align: center;
+    font-family: Brandon_reg;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ebebeb;
+}
+/*Footer starts*/
+footer{
+    margin: 0 auto;
+    background-color: #7690c5;
+}
+.headerwrapper {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 7%;
+}
+.hello {
+    width: 50%;
+    float: left;
+}
+.nav11 {
+    display: inline-block;
+    font-family: Brandon-light;
+    font-size: 60px;
+    color: white;
+}
+.hh11 {
+    display: inline;
+    font-family: Brandon_bld;
+    font-size: 60px;
+    color: white;
+}
+.pp11 {
+    font-family: Brandon_reg;
+    font-size: 18px;
+    color: white;
+    line-height: 23px;
+}
+.contact {
+    margin-top: 10%;
+}
+.icon {
+    display: inline-block;
+    width: 49%;
+}
+.icon li{
+    list-style: none;
+    float: left;
+    padding-top: 12px;
+    margin-right: 6%;
+}
+.icon li a{
+    color: white;
+    font-size: 30px;
+}
+.icon li:hover{
+
+}
+.address {
+    float: right;
+    width: 46%;
+    margin-top: 1.5%;
+}
+#name, #email {
+    font-family: Brandon_reg;
+    font-size: 18px;
+    padding-left: 15px;
+    color: #bbbbbb;
+    width: 100%;
+    height: 50px;
+    border-radius: 2%;
+    border-style: inset;
+    margin-bottom: 7%;
+}
+#message {
+    font-family: Brandon_reg;
+    font-size: 18px;
+    padding-left: 15px;
+    color: #bbbbbb;
+    border-radius: 2%;
+    border-style: inset;
+    margin-bottom: 7%;
+    padding-top: 13px;
+}
+.pp111{
+    font-family: Brandon_reg;
+    font-size: 18px;
+    color: #bbbbbb;
+    line-height: 23px;
+}
+.lastp{
+    text-align: center;
+    margin-top: 60%;
+    margin-bottom: 5%;
+    font-size: 18px;
+    font-family: Brandon_med;
+    color: white;
+}
+/*Footer ends*/
